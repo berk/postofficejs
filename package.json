@@ -1,0 +1,48 @@
+{
+  "name": "postoffice",
+  "description": "Email management and delivery made easy",
+  "version": "0.0.1",
+  "authors": ["Michael Berkovich", "Vladimir Islamov", "Ian McDaniel"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berk/postofficejs.git"
+  },
+  "main": "./lib/postoffice",
+  "keywords": [
+    "mail"
+  ],
+  "bin": {
+    "tr8n": "./bin/postoffice"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "commander": "2.0.0",
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "liquid-node": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.3.3",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-stripcomments": "~0.3.0",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-blanket": "*",
+    "travis-cov": "*",
+    "grunt-mocha-test": "^0.11.0",
+    "phantomjs": "1.8.1-1",
+    "should": "4.0.4",
+    "debug": "*"
+  }
+}
