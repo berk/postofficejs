@@ -6,4 +6,14 @@ var path = require('path');
 var fs = require('fs');
 var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 
-require(lib+'/postoffice.js').start();
+var postoffice = require(lib + '/postoffice');
+postoffice.init();
+
+postoffice.sendTemplate("helloworld", {
+  name: "Berk"
+}, {
+  from: "test@example.com",
+  to: "test@example.com"
+});
+
+postoffice.close();

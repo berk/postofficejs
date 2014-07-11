@@ -6,9 +6,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressLayouts = require('express-ejs-layouts');
 
+var postoffice = require('./lib/postoffice');
+postoffice.init();
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var mail = require('./routes/mail');
 
 var app = express();
 
@@ -26,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(expressLayouts);
 
 app.use('/', routes);
+app.use('/mail', mail);
 app.use('/users', users);
 
 /// catch 404 and forward to error handler
