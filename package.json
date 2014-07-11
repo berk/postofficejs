@@ -2,7 +2,11 @@
   "name": "postoffice",
   "description": "Email management and delivery made easy",
   "version": "0.0.1",
-  "authors": ["Michael Berkovich", "Vladimir Islamov", "Ian McDaniel"],
+  "authors": [
+    "Michael Berkovich",
+    "Vladimir Islamov",
+    "Ian McDaniel"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/berk/postofficejs.git"
@@ -29,7 +33,8 @@
     "ejs": "~0.8.5",
     "express-ejs-layouts": "*",
     "liquid-node": "*",
-    "nodemailer": "*"
+    "nodemailer": "*",
+    "async": "~0.9.0"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
