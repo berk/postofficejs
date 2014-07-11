@@ -99,7 +99,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-blanket');
 
 //  grunt.registerTask('test', ['jshint', 'mocha']);
-  grunt.registerTask('mocha', ['concat', 'comments', 'clean', 'blanket', 'copy', 'mochaTest']);
+  grunt.registerTask('test', ['concat', 'comments', 'clean', 'blanket', 'copy', 'mochaTest']);
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'uglify']);
